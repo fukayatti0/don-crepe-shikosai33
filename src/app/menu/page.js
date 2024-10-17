@@ -33,13 +33,22 @@ const MenuPage = () => {
             <div className="card h-100 menu-item">
               <Image src="/placeholder-image?width=200&height=300" alt="" width="200" height="300" />
               <div className="card-body">
-                <h5 className="card-title">バナナチョコ</h5>
-                <p className="card-text">なめらかなチョコレートとバナナの王道コンビ</p>
+                <h5 className="card-title">クッキーアンドクリーム</h5>
+                <p className="card-text">サクサクのクッキーと濃厚なクリームの絶妙なコンビネーション</p>
                 <h6 className="card-text"><strong>¥450</strong></h6>
               </div>
             </div>
           </div>
-          {/* 他のメニューアイテムも同様に追加 */}
+          <div className="col">
+            <div className="card h-100 menu-item">
+              <Image src="/placeholder-image?width=200&height=300" alt="" width="200" height="300" />
+              <div className="card-body">
+                <h5 className="card-title">抹茶あんこ</h5>
+                <p className="card-text">濃厚な抹茶と甘さ控えめのあんこの絶妙なバランス</p>
+                <h6 className="card-text"><strong>¥450</strong></h6>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
