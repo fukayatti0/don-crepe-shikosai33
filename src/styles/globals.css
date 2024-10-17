@@ -1,0 +1,266 @@
+@media (max-width: 767px) { #css{width:auto;} }
+:root {
+    --bs-primary: #f3cf8d;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 70px;
+    background-color: #dddddd;
+}
+
+.navbar {
+    background-color: var(--bs-primary);
+}
+
+.navbar-brand {
+    font-family: 'Monomaniac One', serif;
+    font-size: 2rem;
+}
+
+#logoat {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.4em;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+            0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #0fa,
+            0 0 45px #0fa, 0 0 55px #0fa, 0 0 70px #0fa, 0 0 80px #0fa;
+    }
+}
+
+.menu-title {
+    font-family: 'Monomaniac One', serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.menu-item {
+    transition: transform 0.3s;
+}
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+.menu-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.social-card {
+    transition: transform 0.3s;
+}
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    text-align: center;
+  }
+  
+  h1, h4 {
+    font-family: serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #000000;
+  }
+  
+  h1 { font-size: 3em; }
+  h4 { font-size: 1.0em; }
+  
+  h2 {
+    font-family: 'Noto Serif JP', serif; 
+    color: #ffffff;
+  }
+  
+  h3 {
+    font-family: "New Tegomin";
+    color: #915700;
+  }
+  
+  h5 {
+    font-family: 'Noto Serif JP', serif; 
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+
+  h6, h7 {
+    font-family: Arial;
+  }
+
+  h6{
+    color: #000000
+  }
+
+  h7{
+    font-size: 1.1rem;
+    display: flex;
+    text-align: center;
+    color: #ffffff
+
+  }
+
+  .footer {
+    background-color: #9b9b9b;
+    color: #ecf0f1;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-image {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-image img {
+    height: 120%;
+    width: auto;
+    object-fit: contain;
+}
+
+.contact-info {
+    text-align: center;
+    font-family: serif;
+    line-height: 1.6;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer {
+  background-color: #9b9b9b;
+  color: #ecf0f1;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  height: 200px;
+}
+
+.footer-image img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left;
+  font-family: serif;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.footer-text h5 {
+  margin: 0;
+  font-family: 'Arial';
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
+/* レスポンシブデザイン対応 */
+@media (max-width: 767px) {
+  .footer-top {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .footer-image {
+      justify-content: center;
+  }
+  
+  .contact-info {
+      text-align: center;
+  }
+}
+
+hr {
+  color: #ffffff;
+  border-width: 3px
+}
