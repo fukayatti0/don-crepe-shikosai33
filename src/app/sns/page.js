@@ -18,9 +18,6 @@ const SNSPage = () => {
   
   return (
     <div>
-      <Head>
-        <title>SNSアカウント</title> 
-      </Head>
       <h1 className="mb-4">SNSアカウント</h1>
       <div className="row">
         <div className="col-md-6 mb-4">

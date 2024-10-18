@@ -15,9 +15,6 @@ const AccessPage = () => {
   
   return (
     <div>
-      <Head>
-        <title>SNSアカウント</title> 
-      </Head>
       <main className="container my-5">
         <h1 className="mb-4">アクセス情報</h1>
         <div className="row">

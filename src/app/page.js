@@ -20,9 +20,6 @@ const HomePage = () => {
 
   return (
     <div className="container mt-5">
-      <Head>
-        <title>ホーム</title> 
-      </Head>
       <h1 className={`menu-title ${monomaniacOne.className}`}>
         DON CREPE
       </h1>
