@@ -9,8 +9,8 @@
                         <Image
                           src="/images/icon.png"
                           alt="ドン・クレープ ロゴ"
-                          width={120}
-                          height={120}
+                          width={240}
+                          height={240}
                           loading="lazy"
                         />
                       </div>

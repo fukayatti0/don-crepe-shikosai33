@@ -12,7 +12,7 @@ export default function AccessPage() {
     }, []);
   
     if (!isClient) {
-      return null; // または適切なローディング表示
+      return null;
     }
   
   return (

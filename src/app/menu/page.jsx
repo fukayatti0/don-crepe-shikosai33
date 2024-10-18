@@ -11,7 +11,7 @@ const MenuPage = () => {
   }, []);
 
   if (!isClient) {
-    return null; // または適切なローディング表示
+    return null;
   }
 
   return (
@@ -21,7 +21,7 @@ const MenuPage = () => {
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
           <div className="col">
             <div className="card h-100 menu-item">
-              <Image src="/placeholder-image?width=200&height=300" alt="" width="200" height="300" />
+              <Image src="/placeholder-image?width=300&height=200" alt="" width="200" height="300" />
               <div className="card-body">
                 <h5 className="card-title">いちごチョコ</h5>
                 <p className="card-text">甘酸っぱいイチゴと濃厚クリームの絶妙なハーモニー</p>
@@ -31,7 +31,7 @@ const MenuPage = () => {
           </div>
           <div className="col">
             <div className="card h-100 menu-item">
-              <Image src="/placeholder-image?width=200&height=300" alt="" width="200" height="300" />
+              <Image src="/placeholder-image?width=300&height=200" alt="" width="200" height="300" />
               <div className="card-body">
                 <h5 className="card-title">クッキーアンドクリーム</h5>
                 <p className="card-text">サクサクのクッキーと濃厚なクリームの絶妙なコンビネーション</p>
@@ -41,7 +41,7 @@ const MenuPage = () => {
           </div>
           <div className="col">
             <div className="card h-100 menu-item">
-              <Image src="/placeholder-image?width=200&height=300" alt="" width="200" height="300" />
+              <Image src="/placeholder-image?width=300&height=200" alt="" width="200" height="300" />
               <div className="card-body">
                 <h5 className="card-title">抹茶あんこ</h5>
                 <p className="card-text">濃厚な抹茶と甘さ控えめのあんこの絶妙なバランス</p>
