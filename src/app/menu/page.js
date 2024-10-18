@@ -3,6 +3,10 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
+export const metadata = {
+  title: '人気メニュー',
+};
+
 const MenuPage = () => {
   const [isClient, setIsClient] = useState(false);
 

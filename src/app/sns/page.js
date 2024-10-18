@@ -4,16 +4,20 @@ import { useEffect, useState } from 'react';
 import InstagramEmbed from '../../components/InstagramEmbed';
 import PostEmbed from '../../components/PostEmbed';
 
-export default function AccessPage() {
-    const [isClient, setIsClient] = useState(false);
-  
-    useEffect(() => {
-      setIsClient(true);
-    }, []);
-  
-    if (!isClient) {
-      return null; // または適切なローディング表示
-    }
+export const metadata = {
+  title: 'SNSアカウント',
+};
+
+const SNSPage = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null; // または適切なローディング表示
+  }
   
   return (
     <div>
@@ -77,3 +81,5 @@ export default function AccessPage() {
     </div>
   );
 }
+
+export default SNSPage;

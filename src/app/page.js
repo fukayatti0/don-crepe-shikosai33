@@ -7,6 +7,10 @@ const monomaniacOne = Monomaniac_One({
   subsets: ['latin'],
 });
 
+export const metadata = {
+  title: 'ホーム',
+};
+
 const HomePage = () => {
   const [isClient, setIsClient] = useState(false);
 

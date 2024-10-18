@@ -2,17 +2,21 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-export default function AccessPage() {
-    const [isClient, setIsClient] = useState(false);
-  
-    useEffect(() => {
-      setIsClient(true);
-    }, []);
-  
-    if (!isClient) {
-      return null; // または適切なローディング表示
-    }
+export const metadata = {
+  title: 'アクセス情報',
+};
 
+const AccessPage = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null; // または適切なローディング表示
+  }
+  
   return (
     <div>
       <main className="container my-5">
@@ -51,4 +55,6 @@ export default function AccessPage() {
       </main>
     </div>
   );
-}
+};
+
+export default AccessPage;
