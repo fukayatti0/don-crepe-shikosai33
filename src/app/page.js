@@ -7,10 +7,6 @@ const monomaniacOne = Monomaniac_One({
   subsets: ['latin'],
 });
 
-export const metadata = {
-  title: 'ホーム',
-};
-
 const HomePage = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -24,6 +20,9 @@ const HomePage = () => {
 
   return (
     <div className="container mt-5">
+      <Head>
+        <title>ホーム</title> 
+      </Head>
       <h1 className={`menu-title ${monomaniacOne.className}`}>
         DON CREPE
       </h1>

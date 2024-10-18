@@ -2,10 +2,6 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-export const metadata = {
-  title: 'アクセス情報',
-};
-
 const AccessPage = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -19,6 +15,9 @@ const AccessPage = () => {
   
   return (
     <div>
+      <Head>
+        <title>SNSアカウント</title> 
+      </Head>
       <main className="container my-5">
         <h1 className="mb-4">アクセス情報</h1>
         <div className="row">

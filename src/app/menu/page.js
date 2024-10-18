@@ -3,10 +3,6 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-export const metadata = {
-  title: '人気メニュー',
-};
-
 const MenuPage = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -20,6 +16,9 @@ const MenuPage = () => {
 
   return (
     <div>
+      <Head>
+        <title>人気メニュー</title> 
+      </Head>
       <main className="container my-5">
         <h1 className="mb-4">人気メニュー</h1>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
