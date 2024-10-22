@@ -62,6 +62,7 @@ const HomePage = () => {
         <div className="bg-red-50 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold mb-4">⚠️ お知らせ</h2>
           <ul className="space-y-2 text-lg">
+            <li>・一般公開は一日目(10/26)のみになります</li>
             <li>・材料がなくなり次第、営業終了となります</li>
             <li>・アレルギー情報は店頭でお尋ねください</li>
             <li>・お支払いは現金のみとなります</li>
