@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   const MobileNavbar = () => (
-    <nav className="fixed top-0 left-0 w-full z-50 rounded-3xl overflow-hidden bg-slate-950/80 border h-20 font-Dela text-2xl mt-2 pt-4">
+    <nav className="fixed top-0 left-0 w-full z-50 rounded-3xl overflow-hidden bg-slate-950/80 h-20 font-Dela text-2xl mt-2 pt-4">
       <div className="container mx-auto px-6">
         <div className={`flex justify-between items-center py-0 ${monomaniacOne.className}`}>
           <ul className="flex justify-center items-center pt-1.0">

@@ -11,10 +11,12 @@ export default function Footer() {
           8号館1年2組教室<br />
           (3階)
         </div>
-        <hr className="border-gray-700 my-4" />
+        <hr className="border-white-700 my-4" />
         <div className={"footer-bottom flex justify-between items-center"}>
-          <div className="footer-text">
-            © ドン・クレープ - 第33回茨香祭1年2組
+          <div className="footer-text text-xl">
+            © ドン・クレープ 
+            <br></br>
+            第33回茨香祭1年2組
           </div>
           <div className="social-links flex space-x-4">
             <a href="https://x.com/don_crepe_nitic" target="_blank" rel="noopener noreferrer">
