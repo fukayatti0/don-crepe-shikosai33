@@ -213,19 +213,21 @@ export const content = {
       Footer: {
         address: [
           'National Institue of Technology', 
-          <br />,
+          <br key="1" />,
           'Ibaraki College, Building 8 Class 1-2 (3rd floor)',
-          <br />,
+          <br key="2" />,
           '866 Nakane', 
-          <br />,
+          <br key="3" />,
           'Hitachinaka-shi Ibaraki-ken',
-          <br />, 
+          <br key="4" />, 
           '〒312-8508'
         ],
         copy: [
-          '© Don Crepe 33rd',
-          <br />,
-           'Shikosai Class 1-2'
+          '© Don Crepe',
+          <br key="5" />,
+          '33rd Shikosai',
+          <br key="6" />,
+          'Class 1-2'
         ]
       }
     }

@@ -27,7 +27,7 @@ const MenuPage = () => {
             <div key={index} className="col">
               <div className="card h-full bg-white shadow-md rounded-lg overflow-hidden">
                 <Image 
-                  src="/api/placeholder/300/200" 
+                  src="/placeholder-image?width=200&height=300" 
                   alt="" 
                   width={300} 
                   height={200} 
