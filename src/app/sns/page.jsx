@@ -21,7 +21,7 @@ const SNSPage = () => {
   }
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto bg-white/30 rounded-lg">
       <h1 className="mb-8 text-3xl font-bold text-center">{t.title}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col h-full">

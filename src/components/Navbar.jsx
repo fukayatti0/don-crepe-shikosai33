@@ -57,11 +57,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-2 bg-transparent flex">
-        <div className="w-1/5 border-b-8 border-yellow-500"></div>
-        <div className="w-1/5 border-b-8 border-red-500"></div>
-        <div className="w-1/5 border-b-8 border-blue-500"></div>
-        <div className="w-1/5 border-b-8 border-green-500"></div>
-        <div className="w-1/5 border-b-8 border-purple-500"></div>
+        <div className="w-1/5 border-b-8 border-yellow-400/80"></div>
+        <div className="w-1/5 border-b-8 border-red-400/80"></div>
+        <div className="w-1/5 border-b-8 border-blue-400/80"></div>
+        <div className="w-1/5 border-b-8 border-green-400/80"></div>
+        <div className="w-1/5 border-b-8 border-purple-400/80"></div>
       </div>
     </nav>
   );

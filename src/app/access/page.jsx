@@ -20,7 +20,7 @@ const AccessPage = () => {
 
   return (
     <div>
-      <main className="container mx-auto my-5 px-4">
+      <main className="container mx-auto my-5 px-4 bg-white/30 rounded-lg">
         <h1 className="mb-8 text-3xl font-bold text-center">{t.title}</h1>
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 px-4 mb-4">

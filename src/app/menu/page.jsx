@@ -20,7 +20,7 @@ const MenuPage = () => {
 
   return (
     <div>
-      <main className="container mx-auto my-5 p-4">
+      <main className="container mx-auto my-5 p-4 bg-white/30 rounded-lg">
         <h1 className="mb-8 text-3xl font-bold text-center">{t.title}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {t.items.map((item, index) => (
