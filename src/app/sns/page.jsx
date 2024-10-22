@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import InstagramEmbed from '../../components/InstagramEmbed';
 import PostEmbed from '../../components/PostEmbed';
 
-export default function SNSPage() {
+const SNSPage = () => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -85,3 +85,5 @@ export default function SNSPage() {
     </div>
   );
 }
+
+export default SNSPage;

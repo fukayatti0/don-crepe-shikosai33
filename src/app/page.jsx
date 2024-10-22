@@ -32,7 +32,11 @@ const HomePage = () => {
           <p className="text-3xl mb-6">8号館3F 1-2教室</p>
           
           <div className="text-xl font-bold mb-4">⏰ 営業時間</div>
-          <p className="text-3xl">10:00 - 16:00</p>
+          <p className="text-3xl">
+            1日目:10:00 - 16:00
+            <br />
+            2日目:10:00 - 17:00
+            </p>
         </div>
       </div>
 
