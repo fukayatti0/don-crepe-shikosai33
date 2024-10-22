@@ -1,33 +1,21 @@
 'use client';
-
-import { useEffect } from 'react';
-import { Raleway, Monomaniac_One, Noto_Serif_JP } from 'next/font/google';
+import { Noto_Sans_JP } from "next/font/google";
+import { Raleway } from 'next/font/google';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
 
 const raleway = Raleway({ subsets: ['latin'], weight: '700' });
-const monomaniacOne = Monomaniac_One({ subsets: ['latin'], weight: '400' });
-const notoSerifJP = Noto_Serif_JP({ subsets: ['latin'], weight: '700' });
 
-export default function RootLayout({ children }) {
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.bundle.min.js')
-      .then(() => {
-        console.log('Bootstrap JS loaded');
-      })
-      .catch((err) => {
-        console.error('Failed to load Bootstrap JS', err);
-      });
-  }, []);
-
+export default function Layout({ children }) {
   return (
     <html lang="ja">
-      <body className={raleway.className}>
+      <body className={`${raleway.className} min-h-screen flex flex-col`}>
         <Navbar />
-        <main className="container my-5">{children}</main>
+        <main className="px-4 sm:px-6 lg:px-8 py-8 md:py-12 bg-gradient-to-r from-purple-500 to-pink-500">
+          <div className="navbar-offset">{children}</div>
+        </main>
         <Footer />
       </body>
     </html>
