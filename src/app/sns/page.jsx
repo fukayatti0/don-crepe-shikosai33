@@ -74,7 +74,7 @@ const SNSPage = () => {
               <div className="mb-4 w-full max-w-lg mx-auto">
                 <PostEmbed 
                   tweetUrl="https://twitter.com/don_crepe_nitic/status/1842417121198010618"
-                  className="w-full"
+                  className="w-full h-full"
                 />
               </div>
               <a
