@@ -1,6 +1,7 @@
   // constants/content.js
 export const content = {
     ja: {
+        pagetitle: 'ようこそ | ドン・クレープ',
         title: 'DON CREPE',
         subtitle: '@第33回茨香祭',
         greeting: [
@@ -36,6 +37,7 @@ export const content = {
         },
       // SNSページ
       sns: {
+        pagetitle: 'SNS | ドン・クレープ',
         title: 'SNSアカウント',
         instagram: {
           title: 'Instagram',
@@ -51,6 +53,7 @@ export const content = {
   
       // メニューページ
       menu: {
+        pagetitle: 'メニュー | ドン・クレープ',
         title: '人気メニュー',
         items: [
           {
@@ -73,6 +76,7 @@ export const content = {
   
       // アクセスページ
       access: {
+        pagetitle: 'アクセス | ドン・クレープ',
         title: 'アクセス情報',
         storeInfo: {
           title: '店舗情報',
@@ -113,6 +117,7 @@ export const content = {
     },
     
     en: {
+        pagetitle: 'Welcome | Don Crepe',
         title: 'DON CREPE',
         subtitle: '@33rd Shikosai',
         greeting: [
@@ -149,6 +154,7 @@ export const content = {
       
       // SNSページ
       sns: {
+        pagetitle: 'SNS | Don Crepe',
         title: 'Social Media',
         instagram: {
           title: 'Instagram',
@@ -164,6 +170,7 @@ export const content = {
   
       // メニューページ
       menu: {
+        pagetitle: 'Menu | Don Crepe',
         title: 'Popular Items',
         items: [
           {
@@ -186,6 +193,7 @@ export const content = {
   
       // アクセスページ
       access: {
+        pagetitle: 'Access | Don Crepe',
         title: 'Access Information',
         storeInfo: {
           title: 'Store Information',
