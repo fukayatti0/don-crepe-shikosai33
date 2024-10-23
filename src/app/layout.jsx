@@ -1,11 +1,13 @@
 'use client'
 import React from 'react';
+import dynamic from 'next/dynamic';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import { Hachi_Maru_Pop } from 'next/font/google';
 import '../styles/globals.css';
-import GoogleAnalytics from '../components/GoogleAnalytics';
+
+const GoogleAnalytics = dynamic(() => import('../components/GoogleAnalytics'), { ssr: false });
 
 const HachiMaruPop = Hachi_Maru_Pop({
   subsets: ['latin'],
@@ -20,7 +22,7 @@ export default function Layout({ children }) {
   return (
     <html lang="ja">
       <body className={`${HachiMaruPop.className} min-h-screen flex flex-col`}>
-      <GoogleAnalytics /> 
+        <GoogleAnalytics />
         <LanguageProvider>
           <Navbar />
           <main className="px-4 sm:px-6 lg:px-8 py-8 md:py-12 bg-gradient-to-r from-purple-500 to-pink-500">
