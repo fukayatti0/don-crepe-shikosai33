@@ -1,8 +1,8 @@
-// app/page.jsx
 'use client';
 import { useLanguage } from '../contexts/LanguageContext';
 import { content } from '../constants/content';
 import { Monomaniac_One, Hachi_Maru_Pop } from 'next/font/google';
+import Countdown from '../components/Countdown';
 
 const monomaniacOne = Monomaniac_One({
   weight: '400',
@@ -21,17 +21,20 @@ const HachiMaruPop = Hachi_Maru_Pop({
 export default function HomePage() {
   const { language } = useLanguage();
   const t = content[language];
+  
+  // カウントダウンの目標日時を設定
+  const targetDate = '2024-10-26T10:00:00';  // 例: 2024年12月31日23:59:59まで
 
   return (
     <div className="min-h-screen bg-white/30 rounded-lg">
       <div className="container mx-auto px-4 py-12 text-center">
-      <title>{t.pagetitle}</title>
-      <meta name="description" content={t.title} />
+        <title>{t.pagetitle}</title>
+        <meta name="description" content={t.title} />
         <h1 className={`text-5xl mb-4 ${monomaniacOne.className}`}>
           {t.title}
         </h1>
         <p className="text-2xl text-gray-600 mb-8">{t.subtitle}</p>
-        
+
         <div className="bg-red-50/0 p-6 rounded-lg mb-8">
           <ul className="space-y-2 text-lg text-xl">
             {t.greeting.map((line, index) => (
@@ -39,6 +42,8 @@ export default function HomePage() {
             ))}
           </ul>
         </div>
+
+        <Countdown targetDate={targetDate} />
         
         <div className="max-w-lg mx-auto bg-yellow-50 p-6 rounded-lg shadow-lg">
           <div className="text-xl font-bold mb-4">{t.location.title}</div>

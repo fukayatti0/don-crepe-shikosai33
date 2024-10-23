@@ -1,3 +1,6 @@
+import { title } from "process";
+import Countdown from "../components/Countdown";
+
   // constants/content.js
 export const content = {
     ja: {
@@ -113,6 +116,13 @@ export const content = {
         copy: [
           '© ドン・クレープ 第33回茨香祭1年2組'
         ]
+      },
+      Countdown: {
+        title: 'カウントダウン',
+        days: '日',
+        hours: '時間',
+        minutes: '分',
+        seconds: '秒'
       }
     },
     
@@ -237,6 +247,13 @@ export const content = {
           <br key="6" />,
           'Class 1-2'
         ]
-      }
+      },
+      Countdown: {
+        title: 'Countdown',
+        days: 'days',
+        hours: 'hours',
+        minutes: 'minutes',
+        seconds: 'seconds'
     }
+  }
 }
