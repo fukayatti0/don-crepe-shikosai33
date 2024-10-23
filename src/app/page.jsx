@@ -26,7 +26,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white/30 rounded-lg">
       <div className="container mx-auto px-4 py-12 text-center">
       <title>{t.pagetitle}</title>
-      <meta name="description" content="営業時間、場所、ご注文方法など各種ご案内" />
+      <meta name="description" content={t.title} />
         <h1 className={`text-5xl mb-4 ${monomaniacOne.className}`}>
           {t.title}
         </h1>

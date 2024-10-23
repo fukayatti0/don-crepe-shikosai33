@@ -22,7 +22,7 @@ const AccessPage = () => {
     <div>
       <main className="container mx-auto my-5 px-4 bg-white/30 rounded-lg">
       <title>{t.pagetitle}</title>
-      <meta name="description" content="営業時間、場所、ご注文方法など各種ご案内" />
+      <meta name="description" content={t.title} />
         <h1 className="mb-8 text-3xl font-bold text-center">{t.title}</h1>
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 px-4 mb-4">

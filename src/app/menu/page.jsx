@@ -22,7 +22,7 @@ const MenuPage = () => {
     <div>
       <main className="container mx-auto my-5 p-4 bg-white/30 rounded-lg">
       <title>{t.pagetitle}</title>
-      <meta name="description" content="営業時間、場所、ご注文方法など各種ご案内" />
+      <meta name="description" content={t.title} />
         <h1 className="mb-8 text-3xl font-bold text-center">{t.title}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {t.items.map((item, index) => (
