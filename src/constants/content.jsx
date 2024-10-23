@@ -118,7 +118,7 @@ export const content = {
         ]
       },
       Countdown: {
-        title: 'カウントダウン',
+        title: '⏳ カウントダウン',
         days: '日',
         hours: '時間',
         minutes: '分',
@@ -249,7 +249,7 @@ export const content = {
         ]
       },
       Countdown: {
-        title: 'Countdown',
+        title: '⏳ Countdown',
         days: 'days',
         hours: 'hours',
         minutes: 'minutes',
