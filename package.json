@@ -16,6 +16,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.20",
     "@types/node": "22.7.6",
     "@types/react": "18.3.11",
     "postcss": "^8",
