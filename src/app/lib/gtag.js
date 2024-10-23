@@ -1,4 +1,4 @@
-export const GA_MEASUREMENT_ID = G-VXDJJ0EMDQ
+export const GA_MEASUREMENT_ID = 'G-VXDJJ0EMDQ'
 
 // pageviewの送信
 export const pageview = (url) => {
