@@ -48,7 +48,7 @@ export const content = {
           buttonText: '@don_crepe.nitic をフォロー'
         },
         twitter: {
-          title: 'X（旧Twitter）',
+          title: 'X(Twitter)',
           description: 'お得な情報や最新情報をお届け！',
           buttonText: '@don_crepe_nitic をフォロー'
         }
@@ -172,7 +172,7 @@ export const content = {
           buttonText: 'Follow @don_crepe.nitic'
         },
         twitter: {
-          title: 'X (formerly Twitter)',
+          title: 'X(Twitter)',
           description: 'Get the latest updates and special offers!',
           buttonText: 'Follow @don_crepe_nitic'
         }
