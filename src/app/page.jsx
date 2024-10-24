@@ -62,8 +62,8 @@ export default function HomePage() {
         <div className="bg-blue-50 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold mb-4">{t.price.title}</h2>
           <ol className="list-decimal list-inside space-y-3 text-lg">
-            {t.price.description.map((step, index) => (
-              <li key={index}>{step}</li>
+            {t.price.description.map((item, index) => (
+              <li key={index}>{item}</li>
             ))}
             <div className="text-xl font-bold mb-4">{t.price.pricelist}</div>
           </ol>

@@ -38,7 +38,11 @@ const MenuPage = () => {
                 <div className="p-4">
                   <h5 className="text-xl font-semibold">{item.name}</h5>
                   <p className="text-gray-700 mt-2">{item.description}</p>
-                  <h6 className="text-lg font-bold mt-4">{item.price}</h6>
+                  <h6 className="text-lg font-bold mt-4">
+                    {item.price1}
+                    <br></br>
+                    {item.price2}
+                    </h6>
                 </div>
               </div>
             </div>

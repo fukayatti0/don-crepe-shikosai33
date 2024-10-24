@@ -1,7 +1,3 @@
-import { title } from "process";
-import Countdown from "../components/Countdown";
-
-  // constants/content.js
 export const content = {
     ja: {
         pagetitle: 'ようこそ | ドン・クレープ',
@@ -74,17 +70,20 @@ export const content = {
           {
             name: 'いちごチョコ🍓',
             description: '甘酸っぱいイチゴと濃厚クリームの絶妙なハーモニー',
-            price: '¥450'
+            price1: '一つ：¥500',
+            price2: '二つ：¥900'
           },
           {
             name: 'クッキーアンドクリーム🍪',
             description: 'サクサクのクッキーと濃厚なクリームの絶妙なコンビネーション',
-            price: '¥450'
+            price1: '一つ：¥500',
+            price2: '二つ：¥900'
           },
           {
             name: '抹茶あんこ🍵',
             description: '濃厚な抹茶と甘さ控えめのあんこの絶妙なバランス',
-            price: '¥450'
+            price1: '一つ：¥500',
+            price2: '二つ：¥900'
           }
         ]
       },
@@ -210,17 +209,20 @@ export const content = {
           {
             name: 'Strawberry Chocolate 🍓',
             description: 'Perfect harmony of sweet-tart strawberries and rich cream',
-            price: '¥450'
+            price1: 'One:¥500',
+            price2: 'Two:¥900'
           },
           {
             name: 'Cookies & Cream 🍪',
             description: 'Perfect combination of crunchy cookies and rich cream',
-            price: '¥450'
+            price1: 'One:¥500',
+            price2: 'Two:¥900'
           },
           {
             name: 'Matcha Red Bean 🍵',
             description: 'Perfect balance of rich matcha and mildly sweet red bean paste',
-            price: '¥450'
+            price1: 'One:¥500',
+            price2: 'Two:¥900'
           }
         ]
       },
@@ -234,7 +236,7 @@ export const content = {
           description: 'Don Crepe is located at Class 1-2 booth during the 33rd Shikosai!',
           details: [
             {
-              label: 'Location',
+              label: 'LocaUseStateをjaに設定しましたtion',
               content: 'National Institue of Technology, IBaraki College, Building 8, Class 1-2 (3rd floor)'
             },
             {
