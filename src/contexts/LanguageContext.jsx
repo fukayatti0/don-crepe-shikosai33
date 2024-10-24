@@ -5,7 +5,7 @@ const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
   // ブラウザ側でのみ実行される初期化
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('ja');
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
