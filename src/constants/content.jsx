@@ -19,7 +19,7 @@ export const content = {
         hours: {
           title: '⏰ 営業時間',
           day1: '1日目:10:00 - 17:00',
-          day2: '2日目:10:00 - 17:00'
+          day2: '2日目:9:00 - 16:00'
         },
         price: {
           title: '💰 価格',
@@ -154,7 +154,7 @@ export const content = {
         hours: {
           title: '⏰ Business Hours',
           day1: 'Day 1: 10:00 - 17:00',
-          day2: 'Day 2: 10:00 - 17:00'
+          day2: 'Day 2: 9:00 - 16:00'
         },
         price: {
           title: '💰 Price',
