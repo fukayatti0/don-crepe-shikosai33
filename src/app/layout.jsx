@@ -4,16 +4,16 @@ import dynamic from 'next/dynamic';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { LanguageProvider } from '../contexts/LanguageContext';
-import { Hachi_Maru_Pop } from 'next/font/google';
+import { Kiwi_Maru } from 'next/font/google';
 import '../styles/globals.css';
 
 const GoogleAnalytics = dynamic(() => import('../components/GoogleAnalytics'), { ssr: false });
 
-const HachiMaruPop = Hachi_Maru_Pop({
+const KiwiMaru = Kiwi_Maru({
   subsets: ['latin'],
   weight: '400',
   preload: false,
-  variable: '--font-hachi-maru-pop',
+  variable: '--kiwi-maru-pop',
   display: 'swap',
   fallback: ['Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'sans-serif'],
 });
@@ -21,7 +21,7 @@ const HachiMaruPop = Hachi_Maru_Pop({
 export default function Layout({ children }) {
   return (
     <html lang="ja">
-      <body className={`${HachiMaruPop.className} min-h-screen flex flex-col`}>
+      <body className={`${KiwiMaru.className} min-h-screen flex flex-col`}>
         <GoogleAnalytics />
         <LanguageProvider>
           <Navbar />
