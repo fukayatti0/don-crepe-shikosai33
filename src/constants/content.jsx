@@ -212,7 +212,7 @@ export const content = {
           description: 'Don Crepe is located at Class 1-2 booth during the 33rd Shikosai!',
           details: [
             {
-              label: 'LocaUseStateをjaに設定しましたtion',
+              label: 'Location',
               content: 'National Institue of Technology, IBaraki College, Building 8, Class 1-2 (3rd floor)'
             },
             {
