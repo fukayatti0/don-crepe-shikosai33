@@ -58,7 +58,7 @@ export const content = {
           {
             name: 'いちごチョコ🍓',
             description: '甘酸っぱいイチゴと濃厚クリームの絶妙なハーモニー',
-            price1: '¥500',
+            price: '¥500',
             image: '/images/strawberry-chocolate.jpg'
           },
           {
