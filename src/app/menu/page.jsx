@@ -29,11 +29,11 @@ const MenuPage = () => {
             <div key={index} className="col">
               <div className="card h-full bg-white shadow-md rounded-lg overflow-hidden">
                 <Image 
-                  src="/placeholder-image?width=200&height=300" 
+                  src={item.image} 
                   alt="" 
-                  width={300} 
-                  height={200} 
-                  className="w-full h-48 object-cover" 
+                  width={1477} 
+                  height={1108} 
+                  className="w-full object-cover" 
                 />
                 <div className="p-4">
                   <h5 className="text-xl font-semibold">{item.name}</h5>

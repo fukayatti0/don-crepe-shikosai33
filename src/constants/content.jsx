@@ -71,19 +71,22 @@ export const content = {
             name: 'いちごチョコ🍓',
             description: '甘酸っぱいイチゴと濃厚クリームの絶妙なハーモニー',
             price1: '一つ：¥500',
-            price2: '二つ：¥900'
+            price2: '二つ：¥900',
+            image: '/images/strawberry-chocolate.jpg'
           },
           {
             name: 'クッキーアンドクリーム🍪',
             description: 'サクサクのクッキーと濃厚なクリームの絶妙なコンビネーション',
             price1: '一つ：¥500',
-            price2: '二つ：¥900'
+            price2: '二つ：¥900',
+            image: '/images/cookie-and-cream.jpg'
           },
           {
             name: '抹茶あんこ🍵',
             description: '濃厚な抹茶と甘さ控えめのあんこの絶妙なバランス',
             price1: '一つ：¥500',
-            price2: '二つ：¥900'
+            price2: '二つ：¥900',
+            image: '/images/matcha-anko.jpg'
           }
         ]
       },
