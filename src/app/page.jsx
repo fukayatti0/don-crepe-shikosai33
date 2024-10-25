@@ -59,17 +59,6 @@ export default function HomePage() {
       </div>
 
 <div className="container mx-auto px-4 py-8 max-w-2xl">
-        <div className="bg-blue-50 p-6 rounded-lg mb-8">
-          <h2 className="text-xl font-bold mb-4">{t.price.title}</h2>
-          <ol className="list-decimal list-inside space-y-3 text-lg">
-            {t.price.description.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-            <div className="text-xl font-bold mb-4">{t.price.pricelist}</div>
-          </ol>
-        </div>
-
-
         <div className="bg-red-50 p-6 rounded-lg mb-8">
           <h2 className="text-xl font-bold mb-4">{t.notices.title}</h2>
           <ul className="space-y-2 text-lg">

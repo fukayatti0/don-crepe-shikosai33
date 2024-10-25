@@ -17,18 +17,6 @@ export const content = {
           day1: '1日目:10:00 - 17:00',
           day2: '2日目:9:00 - 16:00'
         },
-        price: {
-          title: '💰 価格',
-          description: [
-            'セット買いがとてもお得です！',
-            'ぜひお友達や家族とご利用ください！！'
-          ],
-          pricelist: [
-            '一つ:¥500',
-          <br key="1" />,
-            '二つ:¥900',
-          ]
-        },
         notices: {
           title: '⚠️ お知らせ',
           items: [
@@ -71,22 +59,19 @@ export const content = {
             name: 'いちごチョコ🍓',
             description: '甘酸っぱいイチゴと濃厚クリームの絶妙なハーモニー',
             price1: '一つ：¥500',
-            price2: '二つ：¥900',
             image: '/images/strawberry-chocolate.jpg'
           },
           {
             name: 'クッキーアンドクリーム🍪',
             description: 'サクサクのクッキーと濃厚なクリームの絶妙なコンビネーション',
-            price1: '一つ：¥500',
-            price2: '二つ：¥900',
-            image: '/images/cookie-and-cream.jpg'
+            price: '¥500',
+            image:  '/images/cookie-and-cream.jpg'
           },
           {
             name: '抹茶あんこ🍵',
             description: '濃厚な抹茶と甘さ控えめのあんこの絶妙なバランス',
-            price1: '一つ：¥500',
-            price2: '二つ：¥900',
-            image: '/images/matcha-anko.jpg'
+            price: '¥500',
+            image:  '/images/matcha-anko.jpg'
           }
         ]
       },
@@ -158,18 +143,6 @@ export const content = {
           day1: 'Day 1: 10:00 - 17:00',
           day2: 'Day 2: 9:00 - 16:00'
         },
-        price: {
-          title: '💰 Price',
-          description: [
-            'Sets are a great deal!',
-            'Please enjoy with your friends and family!!'
-          ],
-          pricelist: [
-          'One: ¥500',
-          <br key="1" />,
-          'Two: ¥900',
-          ]
-        },
         notices: {
           title: '⚠️ Notices',
           items: [
@@ -212,20 +185,20 @@ export const content = {
           {
             name: 'Strawberry Chocolate 🍓',
             description: 'Perfect harmony of sweet-tart strawberries and rich cream',
-            price1: 'One:¥500',
-            price2: 'Two:¥900'
+            price: '¥500',
+            image: '/images/strawberry-chocolate.jpg'
           },
           {
             name: 'Cookies & Cream 🍪',
             description: 'Perfect combination of crunchy cookies and rich cream',
-            price1: 'One:¥500',
-            price2: 'Two:¥900'
+            price: '¥500',
+            image: '/images/cookie-and-cream.jpg'
           },
           {
             name: 'Matcha Red Bean 🍵',
             description: 'Perfect balance of rich matcha and mildly sweet red bean paste',
-            price1: 'One:¥500',
-            price2: 'Two:¥900'
+            price: '¥500',
+            image: '/images/matcha-anko.jpg'
           }
         ]
       },
