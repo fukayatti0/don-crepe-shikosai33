@@ -1,0 +1,57 @@
+---
+import { content } from '../../constants/content';
+import { Image } from 'astro:assets';
+
+const language = 'ja';
+const t = content[language].access;
+---
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{t.pagetitle}</title>
+  <meta name="description" content={t.title} />
+</head>
+<body>
+  <div>
+    <main class="container mx-auto my-5 px-4 bg-white/30 rounded-lg">
+      <h1 class="mb-8 text-3xl font-bold text-center">{t.title}</h1>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/2 px-4 mb-4">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-4">
+              <h5 class="text-lg font-bold mb-2">{t.storeInfo.title}</h5>
+              <h6 class="text-base mb-4">{t.storeInfo.description}</h6>
+              <ul class="list-none space-y-2">
+                {t.storeInfo.details.map((detail, index) => (
+                  <Fragment key={index}>
+                    <li>
+                      <strong>{detail.label}：</strong> {detail.content}
+                    </li>
+                  </Fragment>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 px-4 mb-4">
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-4">
+              <h5 class="text-lg font-bold mb-2">{t.map.title}</h5>
+              <div class="map-container">
+                <Image
+                  src="/images/busmap01.jpg"
+                  alt="バスマップ"
+                  width={600}
+                  height={600}
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
