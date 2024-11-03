@@ -1,0 +1,133 @@
+---
+import { Image } from 'astro:assets';
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/menu', label: 'Menu' },
+  { href: '/sns', label: 'SNS' },
+  { href: '/access', label: 'Access' },
+];
+
+// クライアントサイドのJavaScript
+const isBrowser = typeof window !== 'undefined';
+const isDesktop = isBrowser ? window.innerWidth >= 768 : false;
+---
+
+{isDesktop ? (
+  <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 h-24 font-Dela">
+    <div class="container mx-auto px-6 h-full">
+      <div class="flex justify-between items-center h-full">
+        <a href="/" class="flex text-white text-4xl transition duration-10000 ease-in-out">
+          ドン・クレープ
+        </a>
+        <button 
+          id="menu-button"
+          class="text-white focus:outline-none relative w-8 h-8 z-50 transition duration-10000 ease-in-out"
+          aria-label="メニューを開く"
+        >
+          <span class="block absolute h-1 w-8 bg-white transform transition duration-10000 ease-in-out -translate-y-2"></span>
+          <span class="block absolute h-1 w-8 bg-white transform transition duration-10000 ease-in-out opacity-100"></span>
+          <span class="block absolute h-1 w-8 bg-white transform transition duration-10000 ease-in-out translate-y-2"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="fixed top-0 right-0 w-64 h-full bg-slate-950/80 shadow-lg transform transition-transform duration-10000 ease-in-out translate-x-full">
+      <ul class="mt-24 px-4">
+        {navItems.map((item) => (
+          <li class="mb-4">
+            <a 
+              href={item.href} 
+              class="text-white text-xl hover:text-yellow-400 transition-colors block py-2 transition duration-10000 ease-in-out"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+) : (
+  <nav class="fixed top-0 left-0 w-full z-50 rounded-3xl overflow-hidden bg-slate-950/80 h-20 font-Dela text-2xl mt-2 pt-4 font-monomaniacone">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-between items-center py-0">
+        <ul class="flex justify-center items-center pt-1.0">
+          <li class="flex flex-col items-center ml-0">
+            <a href="/">
+              <Image
+                src="/images/icon.png" 
+                alt="第33回茨香祭のロゴ" 
+                width="45"
+                height="45"
+                loading="lazy"
+              />
+            </a>
+          </li>
+        </ul>
+        {navItems.map((item, index) => (
+          <ul 
+            class={`flex justify-center items-center relative ${
+              index === 0 ? 'right-[0%]' : 
+              index === 1 ? 'right-[0%] transform translate-x-[10%]' : 
+              index === 2 ? 'left-[0%] transform translate-x-[37%]' : 
+              'left-[0%] transform translate-x-[30%]'
+            }`}
+          >
+            <li class="flex flex-col items-center">
+              <a href={item.href} class="text-white">
+                {item.label}
+              </a>
+            </li>
+          </ul>
+        ))}
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-2 bg-transparent flex">
+      <div class="w-1/5 border-b-8 border-yellow-400/80"></div>
+      <div class="w-1/5 border-b-8 border-red-400/80"></div>
+      <div class="w-1/5 border-b-8 border-blue-400/80"></div>
+      <div class="w-1/5 border-b-8 border-green-400/80"></div>
+      <div class="w-1/5 border-b-8 border-purple-400/80"></div>
+    </div>
+  </nav>
+)}
+
+<script>
+  // クライアントサイドのJavaScript
+  const menuButton = document.getElementById('menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuSpans = menuButton?.querySelectorAll('span');
+  let isMenuOpen = false;
+
+  menuButton?.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen) {
+      mobileMenu?.classList.remove('translate-x-full');
+      mobileMenu?.classList.add('translate-x-0');
+      menuButton.setAttribute('aria-label', 'メニューを閉じる');
+      menuSpans?.[0].classList.remove('-translate-y-2');
+      menuSpans?.[0].classList.add('rotate-45', 'translate-y-0');
+      menuSpans?.[1].classList.remove('opacity-100');
+      menuSpans?.[1].classList.add('opacity-0');
+      menuSpans?.[2].classList.remove('translate-y-2');
+      menuSpans?.[2].classList.add('-rotate-45', 'translate-y-0');
+    } else {
+      mobileMenu?.classList.remove('translate-x-0');
+      mobileMenu?.classList.add('translate-x-full');
+      menuButton.setAttribute('aria-label', 'メニューを開く');
+      menuSpans?.[0].classList.remove('rotate-45', 'translate-y-0');
+      menuSpans?.[0].classList.add('-translate-y-2');
+      menuSpans?.[1].classList.remove('opacity-0');
+      menuSpans?.[1].classList.add('opacity-100');
+      menuSpans?.[2].classList.remove('-rotate-45', 'translate-y-0');
+      menuSpans?.[2].classList.add('translate-y-2');
+    }
+  });
+
+  // レスポンシブ対応
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      location.reload();
+    }
+  });
+</script>

@@ -1,6 +1,6 @@
 ---
-import Navbar from '../components/content/Navbar';
-import Footer from '../components/content/Footer';
+import Navbar from '../components/content/Navbar.astro';
+import Footer from '../components/content/Footer.astro';
 import '../styles/globals.css';
 import '@fontsource/kiwi-maru';
 import '@fontsource/monomaniac-one';
@@ -11,6 +11,7 @@ import '@fontsource/monomaniac-one';
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
     </head>
     <body class="min-h-screen flex flex-col bg-gradient-to-r from-purple-500 to-pink-500 font-kiwimaru">
         <Navbar />
