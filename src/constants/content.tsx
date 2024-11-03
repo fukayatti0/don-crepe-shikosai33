@@ -159,19 +159,19 @@ export const content: ContentType = {
                                     name: 'いちごチョコ🍓',
                                     description: '甘酸っぱいイチゴと濃厚クリームの絶妙なハーモニー',
                                     price: '¥500',
-                                    image: '/images/strawberry-chocolate.jpg'
+                                    image: 'images/strawberry-chocolate.jpg'
                             },
                             {
                                     name: 'クッキーアンドクリーム🍪',
                                     description: 'サクサクのクッキーと濃厚なクリームの絶妙なコンビネーション',
                                     price: '¥500',
-                                    image: '/images/cookie-and-cream.jpg'
+                                    image: 'images/cookie-and-cream.jpg'
                             },
                             {
                                     name: '抹茶あんこ🍵',
                                     description: '濃厚な抹茶と甘さ控えめのあんこの絶妙なバランス',
                                     price: '¥500',
-                                    image: '/images/matcha-anko.jpg'
+                                    image: 'images/matcha-anko.jpg'
                             }
                     ]
             },
@@ -281,19 +281,19 @@ export const content: ContentType = {
                                     name: 'Strawberry Chocolate 🍓',
                                     description: 'Perfect harmony of sweet-tart strawberries and rich cream',
                                     price: '¥500',
-                                    image: '/images/strawberry-chocolate.jpg'
+                                    image: 'images/strawberry-chocolate.jpg'
                             },
                             {
                                     name: 'Cookies & Cream 🍪',
                                     description: 'Perfect combination of crunchy cookies and rich cream',
                                     price: '¥500',
-                                    image: '/images/cookie-and-cream.jpg'
+                                    image: 'images/cookie-and-cream.jpg'
                             },
                             {
                                     name: 'Matcha Red Bean 🍵',
                                     description: 'Perfect balance of rich matcha and mildly sweet red bean paste',
                                     price: '¥500',
-                                    image: '/images/matcha-anko.jpg'
+                                    image: 'images/matcha-anko.jpg'
                             }
                     ]
             },
