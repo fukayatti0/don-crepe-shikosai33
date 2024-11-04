@@ -1,6 +1,8 @@
 ---
 import { content } from '../../constants/content';
-import { Image } from '@unpic/astro';
+import { Image } from 'astro:assets';
+import InstagramButton from "/public/images/sns-btn-instagram-white.png"
+import XButton from "/public/images/sns-btn-x-white.png"
 
 const language = 'ja';
 const t = content[language].footer;
@@ -21,7 +23,7 @@ const t = content[language].footer;
             <div class="social-links flex space-x-4">
                 <a href="https://x.com/don_crepe_nitic" target="_blank" rel="noopener noreferrer">
                     <Image
-                        src="/images/sns-btn-x-white.png"
+                        src={XButton}
                         alt="X（Twitter）"
                         width={30}
                         height={30}
@@ -30,7 +32,7 @@ const t = content[language].footer;
                 </a>
                 <a href="https://instagram.com/don_crepe.nitic" target="_blank" rel="noopener noreferrer">
                     <Image
-                        src="/images/sns-btn-instagram-white.png"
+                        src={InstagramButton}
                         alt="Instagram"
                         width={30}
                         height={30}

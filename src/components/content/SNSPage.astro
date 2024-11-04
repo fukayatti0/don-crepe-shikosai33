@@ -2,7 +2,9 @@
 import { content } from '../../constants/content';
 import InstagramEmbed from '../astro/InstagramEmbed.astro';
 import TwitterEmbed from '../astro/TwitterEmbed.astro';
-import { Image } from '@unpic/astro';
+import { Image } from 'astro:assets';
+import InstagramLogo from "/public/images/sns-logo-instagram.png"
+import XLogo from "/public/images/sns-logo-x.png"
 
 const instagramPost = {
   postUrl: 'https://www.instagram.com/p/DAV6PBeyhci',
@@ -53,7 +55,7 @@ const t = content[language].sns;
               <div class="flex items-center mb-4 justify-center"> <!-- justify-center を追加 -->
                 <div class="w-[30px] h-[30px] mx-2">
                   <Image
-                    src="/images/sns-logo-instagram.png"
+                    src={InstagramLogo}
                     alt="Instagram"
                     width={30}
                     height={30}
@@ -87,7 +89,7 @@ const t = content[language].sns;
               <div class="flex items-center mb-4 justify-center"> <!-- justify-center を追加 -->
                 <div class="w-[30px] h-[30px] mx-2">
                   <Image
-                    src="/images/sns-logo-x.png"
+                    src={XLogo}
                     alt="Twitter"
                     width={30}
                     height={30}

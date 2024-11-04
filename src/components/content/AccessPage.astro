@@ -1,6 +1,7 @@
 ---
 import { content } from '../../constants/content';
-import { Image } from '@unpic/astro';
+import { Image } from 'astro:assets';
+import BusMapImage from "/public/images/busmap01.jpg"
 
 const language = 'ja';
 const t = content[language].access;
@@ -40,7 +41,7 @@ const t = content[language].access;
               <h5 class="text-lg font-bold mb-2">{t.map.title}</h5>
               <div class="map-container">
                 <Image
-                  src="/images/busmap01.jpg"
+                  src={BusMapImage}
                   alt="バスマップ"
                   width={600}
                   height={600}

@@ -1,9 +1,18 @@
 ---
 import { content } from '../../constants/content';
 import { Image } from 'astro:assets';
+import IchigoChocoImage from '/public/images/strawberry-chocolate.jpg';
+import MatchaImage from '/public/images/matcha-anko.jpg';
+import CookieAndCreamImage from '/public/images/cookie-and-cream.jpg';
 
 const language = 'ja';
 const t = content[language].menu;
+
+const images = [
+  IchigoChocoImage,
+  MatchaImage,
+  CookieAndCreamImage,
+];
 ---
 <html>
 <head>
@@ -18,11 +27,12 @@ const t = content[language].menu;
                 {t.items.map((item, index) => (
                     <div class="col" id={`item-${index}`}>
                         <div class="card h-full bg-white shadow-md rounded-lg overflow-hidden">
-                            <Image
-                                src={item.image} 
-                                alt="" 
-                                width={1108} 
-                                height={1477} 
+                            <Image 
+                                src={images[index]} 
+                                alt={item.name}
+                                class="w-full object-cover"
+                                width="1108"
+                                height="1477"
                             />
                             <div class="p-4">
                                 <h5 class="text-xl font-semibold">{item.name}</h5>
@@ -32,6 +42,7 @@ const t = content[language].menu;
                                 </h6>
                             </div>
                         </div>
+                        
                     </div>
                 ))}
             </div>

@@ -1,5 +1,6 @@
 ---
-import { Image } from '@unpic/astro';
+import { Image } from 'astro:assets';
+import IconImage from "/public/images/icon.png" 
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -54,7 +55,7 @@ const isDesktop = isBrowser ? window.innerWidth >= 768 : false;
           <li class="flex flex-col items-center ml-0">
             <a href="/">
                 <Image
-                src="/images/icon.png" 
+                src={IconImage}
                 alt="第33回茨香祭のロゴ" 
                 width={45}
                 height={45}
