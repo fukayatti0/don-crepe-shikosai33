@@ -30,10 +30,5 @@ nav {
 }
 
 .navbar-offset {
-  padding-top: 6.5rem; /* Navbarの高さに応じて調整 */
-}
-
-.col:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
+  padding-top: 5.0rem; /* Navbarの高さに応じて調整 */
 }
