@@ -1,0 +1,61 @@
+---
+import { content } from '../../constants/content';
+import Countdown from '../react/Countdown';
+import { Helmet } from 'react-helmet';
+
+const targetDate = '2024-10-26T10:00:00';
+const language = 'ja';
+const t = content[language].top;
+---
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={t.title} />
+    <title>{t.pagetitle}</title>
+  </head>
+  <body>
+    <div class="h-auto bg-white/30 rounded-lg">
+      <div class="container mx-auto px-4 py-12 text-center">
+        <h1 class="text-6xl mb-4 font-monomaniacone">{t.title}</h1>
+        <p class="text-2xl text-gray-600 mb-8">{t.subtitle}</p>
+        <div class="bg-red-50/0 p-6 rounded-lg mb-8">
+          <ul class="space-y-2 text-xl">
+            {t.greeting.map((line) => (
+              <li>{line}</li>
+            ))}
+          </ul>
+        </div>
+        <Countdown targetDate={targetDate} />
+        <div class="max-w-lg mx-auto bg-yellow-50 p-6 rounded-lg shadow-lg">
+          <div class="text-xl font-bold mb-4">{t.location.title}</div>
+          <p class="text-3xl mb-6">{t.location.content}</p>
+          <div class="text-xl font-bold mb-4">{t.hours.title}</div>
+          <p class="text-xl">
+            {t.hours.day1}
+            <br />
+            {t.hours.day2}
+          </p>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 py-8 max-w-2xl">
+        <div class="bg-red-50 p-6 rounded-lg mb-8">
+          <h2 class="text-xl font-bold mb-4">{t.notices.title}</h2>
+          <ul class="space-y-2 text-lg">
+            {t.notices.items.map((item) => (
+              <li>・{item}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg">
+          <h2 class="text-xl font-bold mb-4">{t.orderProcess.title}</h2>
+          <ol class="list-decimal list-inside space-y-3 text-lg">
+            {t.orderProcess.steps.map((step) => (
+              <li>{step}</li>
+            ))}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

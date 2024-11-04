@@ -1,0 +1,25 @@
+---
+import Navbar from '../components/content/Navbar.astro';
+import Footer from '../components/content/Footer.astro';
+import '../styles/globals.css';
+import '@fontsource/kiwi-maru';
+import '@fontsource/monomaniac-one';
+---
+
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    </head>
+    <body class="min-h-screen flex flex-col bg-gradient-to-r from-purple-500 to-pink-500 font-kiwimaru">
+        <Navbar />
+            <div class="navbar-offset flex-grow px-4 sm:px-6 lg:px-8 py-8">
+                <main>	
+                    <slot />
+                </main>
+            </div>
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,123 @@
+---
+import { content } from '../../constants/content';
+import InstagramEmbed from '../astro/InstagramEmbed.astro';
+import TwitterEmbed from '../astro/TwitterEmbed.astro';
+import { Image } from 'astro:assets';
+import InstagramLogo from "/public/images/sns-logo-instagram.png"
+import XLogo from "/public/images/sns-logo-x.png"
+
+const instagramPost = {
+  postUrl: 'https://www.instagram.com/p/DAV6PBeyhci',
+  maxWidth: 900
+};
+
+const tweetEmbed = {
+  tweetUrl: 'https://twitter.com/don_crepe_nitic/status/1848174898860171359',
+  theme: 'light' as const,
+  maxWidth: 500
+};
+
+const language = 'ja';
+const t = content[language].sns;
+---
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={t.title} />
+    <title>{t.pagetitle}</title>
+    <style>
+      @keyframes pulse {
+        0% { opacity: 0.6; }
+        50% { opacity: 1; }
+        100% { opacity: 0.6; }
+      }
+      .embed-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: none;
+      }
+      .aspect-square {
+      width: 100%;
+      max-width: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto bg-white/30 rounded-lg">
+      <h1 class="mb-8 text-3xl font-bold text-center">{t.title}</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Instagram Section -->
+        <div class="flex flex-col items-center justify-center"> <!-- items-center を追加 -->
+            <div class="bg-white shadow-md rounded-lg embed-container flex-grow mr-0.5 min-h-4/5 mx-auto embed-container relative flex justify-center items-stretch w-full">
+            <div class="p-6 flex flex-col items-center"> <!-- items-center を追加 -->
+              <div class="flex items-center mb-4 justify-center"> <!-- justify-center を追加 -->
+                <div class="w-[30px] h-[30px] mx-2">
+                  <Image
+                    src={InstagramLogo}
+                    alt="Instagram"
+                    width={30}
+                    height={30}
+                    class="mr-3"
+                  />
+                </div>
+                <h2 class="text-xl font-bold text-black">{t.instagram.title}</h2>
+              </div>
+              <div class="embed-container relative w-full flex flex-col items-center"> <!-- flex と items-center を追加 -->
+                <div class="skeleton absolute inset-0 rounded-lg"></div>
+                <div class="relative z-10 w-full max-w-sm mx-auto">
+                  <InstagramEmbed {...instagramPost}/>
+                </div>
+                <a
+                  href="https://www.instagram.com/don_crepe.nitic"
+                  class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out hover:from-purple-600 hover:to-pink-600 mt-4 relative z-20 cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.instagram.buttonText}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Twitter Section -->
+        <div class="flex flex-col items-center"> <!-- items-center を追加 -->
+          <div class="bg-white shadow-md rounded-lg w-full aspect-[4/5] min-h-4/5">
+            <div class="p-6 flex flex-col items-center"> <!-- items-center を追加 -->
+              <div class="flex items-center mb-4 justify-center"> <!-- justify-center を追加 -->
+                <div class="w-[30px] h-[30px] mx-2">
+                  <Image
+                    src={XLogo}
+                    alt="Twitter"
+                    width={30}
+                    height={30}
+                    class="mr-3"
+                  />
+                </div>
+                <h2 class="text-xl font-bold text-black">{t.twitter.title}</h2>
+              </div>
+              <div class="embed-container relative w-full flex flex-col items-center flex-1"> <!-- flex と items-center を追加 -->
+                <div class="skeleton absolute inset-0 rounded-lg"></div>
+                <div class="relative z-10 w-full">
+                  <TwitterEmbed {...tweetEmbed}/>
+                </div>
+                <a
+                  href="https://twitter.com/don_crepe_nitic"
+                  class="inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out hover:bg-blue-600 mt-4 relative z-20 cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.twitter.buttonText}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
