@@ -7,14 +7,12 @@ const targetDate = '2024-10-26T10:00:00';
 const language = 'ja';
 const t = content[language].top;
 ---
-<html>
+<html lang="ja">
   <head>
-    <title>{t.pagetitle}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={t.title} />
-    <Helmet>
-      <title>{t.pagetitle}</title>
-      <meta name="description" content={t.title} />
-    </Helmet>
+    <title>{t.pagetitle}</title>
   </head>
   <body>
     <div class="h-auto bg-white/30 rounded-lg">
